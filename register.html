@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+               font: inherit;
+               font-size: 100%;
+               margin: 0;
+               padding: 0;
+               border: 0; 
+               line-height: 1;
+               font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+           }
+            .top{ 
+                height: 200px;
+                background: rgb(22, 48, 68);
+                padding: 0 20%;
+                display:  grid; 
+            }   
+            .header a{
+                color: white;
+                text-decoration: none;
+            }
+            .header h1{
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .tagline{
+                color: rgb(16, 75, 121);
+                margin-top: -27%;
+                margin-left: 30%;
+                margin-bottom: 5%;
+                letter-spacing: 2px;
+            }
+            .nav-bar{
+                margin-left: 50%;
+            }
+            .nav-bar li{
+                list-style-type: none;
+                display: inline-block;
+            }
+            .nav-bar a{
+                font-size: 13px;
+                color: white;
+                margin: 10px;
+            }
+            .header a:hover{
+                color: rgb(19, 68, 105);
+            }
+            .middle{
+                background: linear-gradient(to right,rgb(185, 235, 212),rgb(252, 221, 204));
+                height: 230px;
+                text-align: center;
+                display: grid;
+            }
+            .middle h1{
+                font-size: 35px;
+                padding-top: 30px;
+                color: rgb(31, 122, 115);
+            }
+            .middle p{
+                color: rgb(112, 112, 112);
+                font-size: 22px;
+                letter-spacing: normal;
+                line-height: 35px;
+                margin-top: 0;
+            }
+            .side{ 
+                height: 530px;
+                padding: 66px 50px 44px 50px;
+                min-width: 960px;
+            }
+            .grid{
+                width: 960px;
+                margin: 0 auto; 
+            }
+            .leftside{
+                width: 60%;
+                margin-left: 2%; 
+            }
+            .leftside h3, .leftside h4{
+                color: rgb(31, 122, 115);
+            }
+            .leftside h3{
+                font-size: 25px;
+            }
+            .leftside ul{
+                list-style-type: square;
+            }
+            .leftside p, .leftside ul{
+                color: rgb(112, 112, 112);
+            }
+            .rightside{ 
+                width: 33.33%; 
+                float: right; 
+                margin-top: -36%;
+            }  
+            .register-group label {
+                color: #648880;
+                cursor: pointer;
+                font-weight: 400;
+                }
+            .register-group input, 
+            .register-group textarea {
+                border: 1px solid #c6c9cc;
+                border-radius: 5px;
+                color: #888; 
+                margin: 5px 0 27px 0;
+                padding: 8px 12px;
+                font-size: 15px;
+            }
+            .register-group input,
+            .register-group textarea {
+                width: 90%;
+            } 
+            .register-group textarea {
+                height: 78px;
+            }
+            .register-group{
+                border: none;
+            }
+            .butt{
+                border: none;
+                background-color: rgb(36, 135, 148);
+                color: white;
+                padding: 10px 25px;
+                border-radius: 5px;
+                font-size: 15px;
+                margin-left: 5%;
+            }
+            .butt:hover{
+                background-color: rgb(48, 156, 170);
+                cursor: pointer;
+            }
+            .footer{
+                background-color: rgb(22, 48, 68);
+                height: 100px;
+            }
+            .bottom{
+                padding-top: 1%;
+                color: white;
+                text-align: center;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="top">
+            <div class="header">
+                <h1><a href="conference.html">STYLES<br>CONFERENCE</a></h1>
+                <div class="nav-bar">
+                    <ul>
+                        <div class="tagline">August 24–26th — Chicago, IL</div>
+                        <li><a href="conference.html">HOME</a></li>
+                        <li><a href="speaker.html">SPEAKERS</a></li>
+                        <li><a href="schedule.html">SCHEDULE</a></li>
+                        <li><a href="venue.html">VENUE</a></li>
+                        <li><a href="register.html">REGISTER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="middle">
+            <h1>Register</h1>
+            <p>Every year we aim to have an unbelievable time, and this year we'd love it for you to join us.<br> Conference passes only cost $99, one of the best values you'll find.</p>
+        </section>
+        <section class="side">
+            <div class="grid">
+                <section class="leftside">
+                    <h3>Purchase a Conference Pass</h3>
+                    <p>$99 PER PASS</p>
+                    <p>Purchase your Styles Conference pass using the form to the right. Multiple passes may be purchased within the same order, so feel free to bring a friend or two along. Once your order is finished we’ll follow up and provide a receipt for your purchase. See you soon!</p>
+                    <h4>Why Attend?</h4>
+                    <ul>
+                        <li>Over twenty world-class speakers</li>
+                        <li>One full day of workshops and two full days of presentations</li>
+                        <li>Hosted at The Chicago Theatre, a historical landmark</li>
+                        <li>August in Chicago is simply amazing</li>
+                    </ul>
+                </section>
+                <form class="rightside" action="#">
+                    <fieldset class="register-group">
+                        <label id="name">Name
+                        <input type="text" id="name" name="name" placeholder="Full Name" required></label>
+                        <label id="email">Email
+                        <input type="email" id="email" name="email" placeholder="Email address" required></label>
+                        <label id="pass">Number of Passes
+                        <input type="number" id="pass" name="pass" placeholder="1" required></label>
+                        <label id="comment">Comments
+                        <textarea name="comment" required></textarea></label>
+                    </fieldset>
+                    <input class="butt" type="submit" name="submit" value="PURCHASE" onclick="myFunction()">
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="bottom">
+                <p>© Styles Conference<br> @copyright 201.35</p> 
+            </div>
+        </section>
+    </body>
+    <script>
+        function myFunction()
+        {
+            alert("Purchase Successfully !!!!!");
+        }
+    </script>
+</html>

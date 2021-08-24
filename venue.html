@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+               font: inherit;
+               font-size: 100%;
+               margin: 0;
+               padding: 0;
+               border: 0; 
+               line-height: 1;
+               font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+           }
+            .top{ 
+                height: 200px;
+                background: rgb(22, 48, 68);
+                padding: 0 20%;
+                display:  grid; 
+            }   
+            .header a{
+                color: white;
+                text-decoration: none;
+            }
+            .header h1{
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .tagline{
+                color: rgb(16, 75, 121);
+                margin-top: -27%;
+                margin-left: 30%;
+                margin-bottom: 5%;
+                letter-spacing: 2px;
+            }
+            .nav-bar{
+                margin-left: 50%;
+            }
+            .nav-bar li{
+                list-style-type: none;
+                display: inline-block;
+            }
+            .nav-bar a{
+                font-size: 13px;
+                color: white;
+                margin: 10px;
+            }
+            .header a:hover{
+                color: rgb(19, 68, 105);
+            }
+            .middle{
+                background: linear-gradient(to right,rgb(185, 235, 212),rgb(252, 221, 204));
+                height: 230px;
+                text-align: center;
+                display: grid;
+            }
+            .middle h1{
+                font-size: 35px;
+                padding-top: 30px;
+                color: rgb(31, 122, 115);
+            }
+            .middle p{
+                color: rgb(112, 112, 112);
+                font-size: 22px;
+                letter-spacing: normal;
+                line-height: 35px;
+                margin-top: 0;
+            }
+            .row{
+                min-width: 960px;
+            }
+            .grid{
+                padding: 5% 20%;
+            }
+            .map{
+                margin-bottom: 5%;
+            }
+            .col{
+                width: 33%;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .venue-map{
+                width: 66%;
+                height: 250px;
+            }
+            .col h2{
+                color: rgb(92, 145, 140);
+            }
+            .col p{
+                color: rgb(126, 122, 122);
+            }
+            .col a{
+                text-decoration: none;
+                color: rgb(145, 168, 166);
+                border-bottom: 0.5px dotted rgb(153, 153, 153);
+            }
+            .col a:hover{
+                color: rgb(175, 171, 171);
+            }
+            .footer{
+                background-color: rgb(22, 48, 68);
+                height: 100px;
+            }
+            .bottom{
+                padding-top: 1%;
+                color: white;
+                text-align: center;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="top">
+            <div class="header">
+                <h1><a href="conference.html">STYLES<br>CONFERENCE</a></h1>
+                <div class="nav-bar">
+                    <ul>
+                        <div class="tagline">August 24–26th — Chicago, IL</div>
+                        <li><a href="conference.html">HOME</a></li>
+                        <li><a href="speaker.html">SPEAKERS</a></li>
+                        <li><a href="schedule.html">SCHEDULE</a></li>
+                        <li><a href="venue.html">VENUE</a></li>
+                        <li><a href="register.html">REGISTER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="middle">
+            <h1>Venue</h1>
+            <p>The conference is held at The Chicago Theatre, a beautiful historical landmark. The conference<br> hotel, Four Seasons, is a short walk away down State Street.</p>
+        </section>
+        <section class="row">
+            <div class="grid">
+                <section class="map">
+                    <div class="col">
+                        <h2>Chicago Theatre</h2>
+                        <p>175 N State St <br>Chicago, IL 60601</p>
+                        <p><a href="http://www.thechicagotheatre.com/"> thechicagotheatre.com </a><br>(312) 462-6300</p>
+                    </div>
+                    <iframe class="venue-map" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606"></iframe>  
+                </section>
+                <section class="map">
+                    <div class="col">
+                        <h2>Four Seasons</h2>
+                        <p>120 E Delaware PI <br>Chicago, IL 60611</p>
+                        <p><a href="http://www.fourseasons.com/">fourseasons.com </a><br>(312) 280-8800</p>
+                    </div>
+                    <iframe class="venue-map" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfaT9dlTTD4gR4Gda1tssAao&key=AIzaSyAeTEJ75nZTKQSN8HhKAzBNJzLGYKTPAJU"></iframe>  
+                </section>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="bottom">
+                <p>© Styles Conference<br> @copyright 201.35</p> 
+            </div>
+        </section>
+    </body>
+</html>

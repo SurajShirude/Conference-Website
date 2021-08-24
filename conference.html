@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <style>
+           body{
+               font: inherit;
+               font-size: 100%;
+               margin: 0;
+               padding: 0;
+               border: 0; 
+               line-height: 1;
+               font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+           }
+            .top{ 
+                padding: 0 20%;
+                height: 550px;
+                overflow: hidden;
+                background-color: rgb(22, 48, 68);
+            }
+            .top a{ 
+                color: white;
+                font-size: 50px; 
+                text-decoration: none;
+                letter-spacing: .5px;
+                line-height: 44px;
+            }
+            .menu{
+                list-style-type: none;
+                text-decoration: none;
+                padding-left: 55%;
+                margin-bottom: 12%;
+            }
+            .menu a{
+                float: left; 
+                font-size: 14px;
+                overflow: hidden;
+                margin: 5px;
+                padding: 5px; 
+            }
+            .top a:hover, .menu a:hover{
+                color: rgb(19, 68, 105);
+            }
+            .head{
+                text-align: center;
+                font-size: 20px;
+                line-height: 50px;
+                font-size: 30px;
+                letter-spacing: -1px;
+                color: white;
+            }
+            .button{
+                border: 1px solid white;
+                border-radius: 4px;
+                background-color: rgb(22, 48, 68);
+                color: white;
+                padding: 20px 30px;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .button:hover{
+                background-color: white;
+                color: rgb(19, 68, 105);
+                cursor: pointer;
+            }
+            .middle{
+                background-color: #fff; 
+                padding: 66px 0 44px 0;
+                min-width: 960px;
+            }
+            .grid{
+                margin: 0 auto;
+                width: 960px;
+                padding: 0 15px; 
+            }
+            .col{
+                display: inline-block;
+                width: 29%;
+                vertical-align: top;
+                padding: 0 15px; 
+            }
+            .first img{
+                border-radius: 5px;
+                margin-bottom: 22px;
+                display: block;
+                max-width: 100%;
+            }
+            .first a:hover h3{
+                color: #a9b2b9;
+            }
+            .first a{
+                text-decoration: none;
+            }
+            .footer{
+                background-color: rgb(22, 48, 68);
+                height: 100px;
+            }
+            .bottom{
+                padding-top: 1%;
+                color: white;
+                text-align: center;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="top">
+            <p><a href="conference.html">STYLES<br>CONFERENCE</a></p>
+            <ul class="menu">
+                <p style="color: rgb(85, 169, 233); padding-left: 48%; font-size: 15px;">August 24–26th — Chicago, IL</p>
+                <li><a href="conference.html">HOME</a></li>
+                <li><a href="speaker.html">SPEAKERS</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="venue.html">VENUE</a></li>
+                <li><a href="register.html">REGISTER</a></li>
+            </ul>
+            <div class="head">
+                <p style="color: rgb(22, 66, 99); font-size: 40px;">Dedicated to the Craft of Building Websites</p>
+                <p style="margin-top: -3%;">Every year the brightest web designers and front-end developers descend on<br> Chicago to discuss the latest tech logies. Join us this August!</p>
+                <button class="button">REGISTER NOW</button>
+            </div>
+        </section>
+        <section class="middle">
+            <div class="grid">
+                <section class="first col">
+                    <h5>SPEAKERS</h5>
+                    <a href="speaker.html">
+                        <img src="speakers.jpg" alt="speaker">
+                        <h3>World-Class Speakers</h3>
+                    </a>
+                    <p>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.</p>
+                </section>
+                <section class="first col">
+                    <h5>SCHEDULE</h5>
+                    <a href="schedule.html">
+                        <img src="schedule.jpg" alt="schedule">
+                        <h3>Three inspiring Days</h3>
+                    </a>
+                    <p>Enjoy three inspiring and action-packed days of tals, gatherings, and all-around good times.</p>
+                </section>
+                <section class="first col">
+                    <h5>VENUE</h5>
+                    <a href="venue.html">
+                        <img src="images.jpg" alt="images">
+                        <h3>The HAYTT Theater Mumbai</h3>
+                    </a>
+                    <p>Within the heart of downtown Chicago, The Chicago Theatre will provide a beautiful conference venue.</p>
+                </section>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="bottom">
+                <p>© Styles Conference<br> @copyright 201.35</p> 
+            </div>
+        </section>
+    </body>
+</html>
